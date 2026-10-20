@@ -6,6 +6,8 @@ MÓDULO MS-01 es una pieza de portfolio independiente: un instrumento real, no u
 maqueta. Todo el sonido se genera en tiempo real con Web Audio API y toda la
 interfaz está construida con React y CSS. No hay samples, plugins ni backend.
 
+**Demo en vivo:** [alejandropd05.github.io/modulo-ms01](https://alejandropd05.github.io/modulo-ms01/) · **Código:** [github.com/AlejandroPD05/modulo-ms01](https://github.com/AlejandroPD05/modulo-ms01)
+
 ![Panel de MÓDULO MS-01 encendido, con cinco notas activas](docs/captura-desktop.png)
 
 ## La idea
@@ -146,7 +148,8 @@ npm run lint
 npm test
 ```
 
-El proyecto usa npm y `package-lock.json`.
+El proyecto usa npm y `package-lock.json`. Cada push a `main` ejecuta lint, tests y
+build en GitHub Actions y publica `dist` en GitHub Pages.
 
 ## Compatibilidad y límites
 
