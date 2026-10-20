@@ -39,6 +39,8 @@ body {
   background: var(--fondo);
   color: var(--panel-claro);
   font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -96,7 +98,7 @@ svg {
   background: var(--fondo);
   color: var(--panel-claro);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 14px;
   text-decoration: none;
   transition: transform 160ms ease;
 }
@@ -178,7 +180,7 @@ svg {
     linear-gradient(150deg, rgba(240, 233, 218, 0.1), transparent 55%),
     rgba(240, 233, 218, 0.025);
   color: var(--ambar-claro);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.08em;
@@ -201,23 +203,23 @@ svg {
 .marca__texto {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
 }
 
 .marca__texto strong {
   color: var(--panel-claro);
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
   line-height: 1;
 }
 
 .marca__texto small {
-  color: rgba(240, 233, 218, 0.5);
+  color: rgba(240, 233, 218, 0.58);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   line-height: 1.4;
 }
 
@@ -226,10 +228,10 @@ svg {
   align-items: center;
   gap: 10px;
   min-width: 0;
-  color: rgba(240, 233, 218, 0.4);
+  color: rgba(240, 233, 218, 0.52);
   font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 0.12em;
+  font-size: 13px;
+  letter-spacing: 0.07em;
   white-space: nowrap;
 }
 
@@ -260,16 +262,16 @@ svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 34px;
-  padding: 7px 9px;
-  border: 1px solid rgba(240, 233, 218, 0.13);
+  gap: 7px;
+  min-height: 38px;
+  padding: 8px 11px;
+  border: 1px solid rgba(240, 233, 218, 0.16);
   border-radius: 5px;
-  background: rgba(240, 233, 218, 0.025);
-  color: rgba(240, 233, 218, 0.68);
+  background: rgba(240, 233, 218, 0.035);
+  color: rgba(240, 233, 218, 0.78);
   font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.07em;
+  font-size: 14px;
+  letter-spacing: 0.045em;
   white-space: nowrap;
   transition:
     color 160ms ease,
@@ -278,8 +280,8 @@ svg {
 }
 
 .accion svg {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -306,9 +308,9 @@ svg {
 }
 
 .accion__tiempo {
-  padding-left: 3px;
+  padding-left: 4px;
   color: #f0a18e;
-  font-size: 8px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
 }
 
@@ -316,8 +318,8 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  min-height: 40px;
-  padding: 5px 8px 5px 11px;
+  min-height: 42px;
+  padding: 6px 9px 6px 12px;
   border: 1px solid rgba(240, 233, 218, 0.2);
   border-radius: 7px;
   background:
@@ -356,22 +358,22 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1px;
+  gap: 2px;
   font-family: var(--mono);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .interruptor__texto small {
-  color: rgba(240, 233, 218, 0.42);
-  font-size: 6px;
-  letter-spacing: 0.12em;
+  color: rgba(240, 233, 218, 0.56);
+  font-size: 12px;
+  letter-spacing: 0.08em;
 }
 
 .interruptor__texto strong {
   color: var(--panel-claro);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
 }
 
 .interruptor.is-encendido .interruptor__texto strong {
@@ -422,7 +424,7 @@ svg {
 .tapa {
   position: relative;
   overflow: hidden;
-  padding: 13px 18px 15px;
+  padding: 15px 19px 17px;
   border: 1px solid #a79c86;
   border-radius: 13px 13px 17px 17px;
   background:
@@ -505,21 +507,22 @@ svg {
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 0 8px 9px;
+  padding: 0 8px 10px;
   border-bottom: 1px solid var(--linea);
   color: var(--tinta-tenue);
   font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 0.11em;
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
 .tapa__marca {
   color: var(--tinta);
   font-family: var(--sans);
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
 }
 
 .tapa__marca i {
@@ -547,8 +550,8 @@ svg {
 .pantalla {
   position: relative;
   overflow: hidden;
-  margin-top: 11px;
-  padding: 8px 12px 10px;
+  margin-top: 12px;
+  padding: 10px 14px 12px;
   border: 1px solid #30342a;
   border-radius: 7px;
   background:
@@ -595,12 +598,13 @@ svg {
 .pantalla__barra {
   display: flex;
   gap: 16px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   border-bottom: 1px solid rgba(215, 227, 180, 0.12);
   color: var(--display-tenue);
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.13em;
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  line-height: 1.4;
 }
 
 .pantalla__barra span:nth-child(2) {
@@ -613,10 +617,10 @@ svg {
 
 .pantalla__contenido {
   display: grid;
-  grid-template-columns: minmax(220px, 1.08fr) minmax(220px, 1.25fr) minmax(190px, 0.82fr);
+  grid-template-columns: minmax(230px, 1.08fr) minmax(220px, 1.25fr) minmax(205px, 0.82fr);
   gap: 16px;
   align-items: stretch;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 
 .pantalla__preset {
@@ -627,20 +631,20 @@ svg {
 }
 
 .pantalla__micro {
-  color: rgba(215, 227, 180, 0.6);
+  color: rgba(215, 227, 180, 0.7);
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.16em;
+  font-size: 13px;
+  letter-spacing: 0.1em;
 }
 
 .pantalla__nombre {
   overflow: hidden;
-  margin: 3px 0 4px;
+  margin: 5px 0 6px;
   color: var(--panel-claro);
-  font-size: clamp(24px, 2.2vw, 32px);
+  font-size: clamp(36px, 2.75vw, 44px);
   font-weight: 500;
-  letter-spacing: 0.08em;
-  line-height: 0.95;
+  letter-spacing: 0.05em;
+  line-height: 1.08;
   text-overflow: ellipsis;
   text-shadow:
     0 0 18px rgba(215, 227, 180, 0.2),
@@ -651,13 +655,13 @@ svg {
 .pantalla__descripcion {
   display: -webkit-box;
   overflow: hidden;
-  max-width: 290px;
+  max-width: 310px;
   margin: 0;
-  color: rgba(215, 227, 180, 0.65);
-  font-size: 10px;
+  color: rgba(215, 227, 180, 0.76);
+  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.015em;
-  line-height: 1.35;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
@@ -666,7 +670,7 @@ svg {
   position: relative;
   display: flex;
   min-width: 0;
-  min-height: 66px;
+  min-height: 74px;
   align-items: center;
   padding: 0 14px;
   border-right: 1px solid rgba(215, 227, 180, 0.1);
@@ -676,55 +680,55 @@ svg {
 .visualizador {
   display: block;
   width: 100%;
-  height: 62px;
+  height: 68px;
 }
 
 .pantalla__visual-etiqueta {
   position: absolute;
   right: 15px;
-  bottom: -1px;
-  color: rgba(215, 227, 180, 0.56);
+  bottom: 0;
+  color: rgba(215, 227, 180, 0.62);
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.14em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
 }
 
 .pantalla__lecturas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3px 12px;
+  gap: 4px 12px;
   align-content: center;
 }
 
 .pantalla__dato {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
   min-width: 0;
 }
 
 .pantalla__dato span {
-  color: rgba(215, 227, 180, 0.52);
+  color: rgba(215, 227, 180, 0.68);
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.13em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
 }
 
 .pantalla__dato strong {
   overflow: hidden;
   color: var(--display-texto);
   font-family: var(--mono);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   line-height: 1.1;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .pantalla__dato em {
-  color: rgba(215, 227, 180, 0.35);
-  font-size: 8px;
+  color: rgba(215, 227, 180, 0.48);
+  font-size: 13px;
   font-style: normal;
 }
 
@@ -732,14 +736,14 @@ svg {
   display: flex;
   grid-column: 1 / -1;
   align-items: center;
-  gap: 6px;
-  margin-top: 1px;
-  padding-top: 4px;
+  gap: 7px;
+  margin-top: 2px;
+  padding-top: 5px;
   border-top: 1px solid rgba(215, 227, 180, 0.1);
-  color: rgba(215, 227, 180, 0.64);
+  color: rgba(215, 227, 180, 0.74);
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.12em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
 }
 
 .led {
@@ -758,10 +762,10 @@ svg {
 
 .rec {
   margin-left: auto;
-  color: #eb846b;
-  font-size: 6px;
+  color: #f0927b;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
 }
 
 .rec::before {
@@ -775,15 +779,15 @@ svg {
   grid-column: 1 / -1;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  min-height: 26px;
-  margin-top: 2px;
-  border: 1px solid rgba(215, 227, 180, 0.22);
+  gap: 6px;
+  min-height: 32px;
+  margin-top: 3px;
+  border: 1px solid rgba(215, 227, 180, 0.28);
   border-radius: 3px;
-  color: rgba(215, 227, 180, 0.74);
+  color: rgba(215, 227, 180, 0.82);
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.15em;
+  font-size: 13px;
+  letter-spacing: 0.1em;
   transition:
     color 160ms ease,
     border-color 160ms ease,
@@ -791,8 +795,8 @@ svg {
 }
 
 .demo svg {
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   fill: currentColor;
 }
 
@@ -811,7 +815,7 @@ svg {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 6px;
+  padding: 10px 6px;
   border-bottom: 1px solid var(--linea-fuerte);
 }
 
@@ -819,8 +823,8 @@ svg {
   flex: 0 0 auto;
   color: var(--tinta-tenue);
   font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 0.13em;
+  font-size: 13px;
+  letter-spacing: 0.08em;
 }
 
 .banco__etiqueta b {
@@ -833,7 +837,7 @@ svg {
   min-width: 0;
   flex: 1;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -846,14 +850,14 @@ svg {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 6px;
-  min-height: 25px;
-  padding: 4px 7px;
+  gap: 7px;
+  min-height: 32px;
+  padding: 5px 9px;
   border-radius: 3px;
-  color: #5f5749;
+  color: #4f483c;
   font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.06em;
+  font-size: 14px;
+  letter-spacing: 0.04em;
   transition:
     color 150ms ease,
     background 150ms ease,
@@ -866,8 +870,8 @@ svg {
 }
 
 .banco__numero {
-  color: #6a6152;
-  font-size: 6px;
+  color: #5f5749;
+  font-size: 12px;
 }
 
 .banco__boton.is-activo {
@@ -884,7 +888,7 @@ svg {
   flex: 0 0 auto;
   color: #625a4c;
   font-family: var(--mono);
-  font-size: 6px;
+  font-size: 12px;
   letter-spacing: 0.12em;
 }
 
@@ -902,7 +906,7 @@ svg {
   display: flex;
   min-width: 0;
   flex-direction: column;
-  padding: 12px 14px 10px;
+  padding: 14px 14px 12px;
   border-right: 1px solid var(--linea);
 }
 
@@ -913,33 +917,35 @@ svg {
 .modulo__cabecera {
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding-bottom: 8px;
+  gap: 8px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--linea);
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .modulo__numero {
   display: grid;
-  width: 20px;
-  height: 17px;
+  width: 26px;
+  height: 21px;
+  flex: 0 0 auto;
   place-items: center;
   border: 1px solid rgba(23, 21, 16, 0.25);
   border-radius: 2px;
   color: var(--ambar-oscuro);
   font-family: var(--mono);
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .modulo__cabecera h2 {
   margin: 0;
   color: #3f392f;
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.14em;
-  line-height: 1;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -965,7 +971,7 @@ svg {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
 .oscilador__fila {
@@ -973,7 +979,7 @@ svg {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 5px 0 6px;
+  padding: 7px 0 8px;
   border-bottom: 1px dashed rgba(23, 21, 16, 0.13);
 }
 
@@ -982,7 +988,7 @@ svg {
   min-width: 0;
   flex: 1;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 
 .control-cabecera {
@@ -990,18 +996,19 @@ svg {
   align-items: baseline;
   justify-content: space-between;
   gap: 5px;
-  color: #5f5749;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.09em;
+  font-size: 13px;
+  letter-spacing: 0.045em;
+  line-height: 1.3;
 }
 
 .control-cabecera em {
   overflow: hidden;
   color: var(--ambar-oscuro);
-  font-size: 6px;
+  font-size: 12px;
   font-style: normal;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1011,23 +1018,23 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 
 .mezcla {
   display: flex;
   align-items: center;
-  gap: 5px;
-  color: #625a4c;
+  gap: 6px;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 5px;
+  font-size: 12px;
 }
 
 .mezcla i {
   display: block;
   overflow: hidden;
-  width: 37px;
-  height: 3px;
+  width: 44px;
+  height: 4px;
   border-radius: 4px;
   background: #bbb09b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.16);
@@ -1048,26 +1055,27 @@ svg {
   flex: 1;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .filtro__perillas {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 10px;
-  padding-top: 2px;
+  gap: 12px;
+  padding-top: 3px;
 }
 
 .filtro__tipo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   margin-top: auto;
-  color: #5f5749;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
 }
 
 .filtro__tipo i {
@@ -1083,13 +1091,13 @@ svg {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 7px;
+  gap: 9px;
 }
 
 .envolvente__perillas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7px 10px;
+  gap: 10px 10px;
   justify-items: center;
 }
 
@@ -1130,10 +1138,11 @@ svg {
 }
 
 .grafico__etiquetas text {
-  fill: #8a806e;
+  fill: #5b5345;
   font-family: var(--mono);
-  font-size: 5px;
-  letter-spacing: 0.04em;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .grafico__cursor {
@@ -1147,11 +1156,11 @@ svg {
 }
 
 .grafico--envolvente {
-  height: 56px;
+  height: 64px;
 }
 
 .grafico--filtro {
-  height: 55px;
+  height: 62px;
 }
 
 /* Espacio ------------------------------------------------------------------ */
@@ -1160,7 +1169,7 @@ svg {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 7px;
+  gap: 9px;
 }
 
 .espacio__perillas {
@@ -1172,12 +1181,12 @@ svg {
 
 .ecos {
   display: flex;
-  height: 48px;
+  height: 52px;
   align-items: flex-end;
   justify-content: space-between;
   gap: 3px;
   margin-top: auto;
-  padding: 0 3px 3px;
+  padding: 0 3px 4px;
   border-bottom: 1px solid var(--linea);
 }
 
@@ -1193,10 +1202,11 @@ svg {
 }
 
 .espacio__tipo {
-  color: #5f5749;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -1217,13 +1227,14 @@ svg {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  padding-top: 7px;
+  gap: 6px;
+  padding-top: 8px;
   border-top: 1px dashed rgba(23, 21, 16, 0.16);
-  color: #5f5749;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.06em;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
 }
 
 .salida__leds {
@@ -1247,11 +1258,13 @@ svg {
 .salida__nota {
   display: flex;
   align-items: center;
-  gap: 4px;
-  color: #655d4f;
+  justify-content: center;
+  gap: 5px;
+  color: #5b5345;
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.06em;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -1276,11 +1289,11 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
 
 .perilla--pequena {
-  --tamano-perilla: 47px;
+  --tamano-perilla: 49px;
 }
 
 .perilla--grande {
@@ -1288,11 +1301,12 @@ svg {
 }
 
 .perilla__etiqueta {
-  color: #5f5749;
+  color: #554e41;
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.1em;
-  line-height: 1;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  line-height: 1.2;
   text-align: center;
   white-space: nowrap;
 }
@@ -1403,32 +1417,32 @@ svg {
 
 .perilla__valor {
   display: block;
-  min-width: 43px;
-  padding: 1px 3px;
-  border: 1px solid rgba(23, 21, 16, 0.12);
+  min-width: 50px;
+  padding: 2px 4px;
+  border: 1px solid rgba(23, 21, 16, 0.16);
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.22);
-  color: #5e5648;
+  background: rgba(255, 255, 255, 0.28);
+  color: #514a3e;
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: center;
   white-space: nowrap;
 }
 
 .perilla--pequena .perilla__valor {
-  min-width: 38px;
-  font-size: 7px;
+  min-width: 47px;
+  font-size: 13px;
 }
 
 .perilla--grande .perilla__etiqueta {
-  font-size: 8px;
+  font-size: 13px;
 }
 
 .perilla--grande .perilla__valor {
-  min-width: 52px;
-  font-size: 9px;
+  min-width: 61px;
+  font-size: 14px;
 }
 
 /* Selector de onda --------------------------------------------------------- */
@@ -1442,7 +1456,7 @@ svg {
 .selector-onda__boton {
   display: inline-flex;
   width: 30px;
-  height: 26px;
+  height: 28px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(23, 21, 16, 0.18);
@@ -1494,8 +1508,8 @@ svg {
 /* -------------------------------------------------------------------------- */
 
 .teclado {
-  margin-top: 8px;
-  padding: 8px 9px 10px;
+  margin-top: 10px;
+  padding: 10px 10px 12px;
   border-radius: 7px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 18%),
@@ -1511,36 +1525,36 @@ svg {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0 4px 8px;
+  padding: 0 4px 10px;
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.05em;
 }
 
 .octava {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
 
 .octava__etiqueta {
   margin-right: 2px;
-  color: #9a9080;
-  font-size: 6px;
-  letter-spacing: 0.11em;
+  color: #aea493;
+  font-size: 12px;
+  letter-spacing: 0.08em;
 }
 
 .octava button {
   display: grid;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   place-items: center;
-  border: 1px solid rgba(212, 202, 184, 0.18);
+  border: 1px solid rgba(212, 202, 184, 0.22);
   border-radius: 2px;
-  background: rgba(240, 233, 218, 0.035);
-  color: #d3cbbb;
+  background: rgba(240, 233, 218, 0.045);
+  color: #e0d7c7;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1;
   transition:
     background 130ms ease,
@@ -1553,9 +1567,9 @@ svg {
 }
 
 .octava__valor {
-  min-width: 66px;
+  min-width: 78px;
   color: var(--ambar-claro);
-  font-size: 7px;
+  font-size: 13px;
   text-align: center;
   white-space: nowrap;
 }
@@ -1567,24 +1581,24 @@ svg {
 
 .teclado__division {
   width: 1px;
-  height: 13px;
-  background: rgba(240, 233, 218, 0.15);
+  height: 16px;
+  background: rgba(240, 233, 218, 0.18);
 }
 
 .teclado__ayuda {
-  color: #9a9080;
-  letter-spacing: 0.04em;
+  color: #afa595;
+  letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
 .teclado__ayuda b {
-  color: #c4baa8;
+  color: #d2c8b7;
   font-weight: 500;
 }
 
 .teclado__voces {
   margin-left: auto;
-  color: #9a9080;
+  color: #afa595;
   white-space: nowrap;
 }
 
@@ -1595,7 +1609,7 @@ svg {
 
 .teclado__blancas {
   display: flex;
-  height: 105px;
+  height: 116px;
   gap: 2px;
 }
 
@@ -1681,33 +1695,35 @@ svg {
 
 .tecla__atajo {
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 50%;
-  padding: 1px 2px;
-  border: 1px solid rgba(23, 21, 16, 0.14);
+  padding: 2px 3px;
+  border: 1px solid rgba(23, 21, 16, 0.18);
   border-radius: 2px;
-  color: #6f6555;
+  color: #594f40;
   font-family: var(--mono);
-  font-size: 7px;
-  line-height: 1.2;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.15;
   transform: translateX(-50%);
 }
 
 .tecla--negra .tecla__atajo {
-  top: 5px;
-  border-color: rgba(240, 233, 218, 0.14);
-  color: #b8ae9c;
-  font-size: 6px;
+  top: 6px;
+  border-color: rgba(240, 233, 218, 0.18);
+  color: #cfc4b2;
+  font-size: 12px;
 }
 
 .tecla__nota {
   position: absolute;
   right: 0;
-  bottom: 5px;
+  bottom: 7px;
   left: 0;
-  color: #5f5749;
+  color: #514a3d;
   font-family: var(--mono);
-  font-size: 7px;
+  font-size: 13px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -1730,11 +1746,12 @@ svg {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 9px 7px 0;
-  color: #625a4c;
+  padding: 12px 7px 0;
+  color: #584f42;
   font-family: var(--mono);
-  font-size: 6px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  letter-spacing: 0.045em;
+  line-height: 1.4;
 }
 
 .ruta {
@@ -1765,7 +1782,7 @@ svg {
 }
 
 .tapa__firma {
-  color: #625a4c;
+  color: #584f42;
   white-space: nowrap;
 }
 
@@ -1774,11 +1791,12 @@ svg {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 14px 4px 0;
-  color: #9a9080;
+  padding: 16px 4px 0;
+  color: #ada392;
   font-family: var(--mono);
-  font-size: 7px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
 }
 
 .pie i {
@@ -1803,16 +1821,16 @@ svg {
   display: flex;
   max-width: calc(100vw - 32px);
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border: 1px solid rgba(240, 233, 218, 0.18);
+  gap: 9px;
+  padding: 12px 16px;
+  border: 1px solid rgba(240, 233, 218, 0.22);
   border-radius: 5px;
-  background: rgba(17, 15, 12, 0.95);
-  color: #e6ddcb;
+  background: rgba(17, 15, 12, 0.96);
+  color: #f0e7d6;
   font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.06em;
-  line-height: 1.4;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.5);
   transform: translateX(-50%);
   animation: aviso-entra 180ms ease-out;
@@ -1858,8 +1876,8 @@ svg {
   }
 
   .modulo {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 11px;
+    padding-left: 11px;
   }
 
   .oscilador__fila {
@@ -1871,15 +1889,15 @@ svg {
   }
 
   .perilla--pequena {
-    --tamano-perilla: 43px;
+    --tamano-perilla: 47px;
   }
 
   .perilla--grande {
-    --tamano-perilla: 68px;
+    --tamano-perilla: 72px;
   }
 
   .pantalla__contenido {
-    grid-template-columns: minmax(190px, 1fr) minmax(190px, 1.2fr) minmax(175px, 0.85fr);
+    grid-template-columns: minmax(205px, 1fr) minmax(200px, 1.2fr) minmax(190px, 0.85fr);
     gap: 12px;
   }
 }
@@ -1917,14 +1935,14 @@ svg {
 
   .salida__voces {
     width: auto;
-    min-width: 105px;
+    min-width: 120px;
     border-top: 0;
     border-left: 1px dashed rgba(23, 21, 16, 0.16);
     padding: 0 0 0 18px;
   }
 
   .salida__nota {
-    max-width: 80px;
+    max-width: 125px;
     text-align: left;
   }
 
@@ -1955,11 +1973,11 @@ svg {
 
   .interruptor {
     flex: 0 0 auto;
-    min-width: 106px;
+    min-width: 118px;
   }
 
   .tapa {
-    padding: 11px 10px 13px;
+    padding: 13px 10px 15px;
   }
 
   .tapa__franja {
@@ -1978,7 +1996,7 @@ svg {
   }
 
   .pantalla {
-    padding: 7px 9px 9px;
+    padding: 9px 11px 11px;
   }
 
   .pantalla__barra {
@@ -2005,33 +2023,33 @@ svg {
   .pantalla__visual {
     grid-column: 1 / -1;
     grid-row: 2;
-    min-height: 48px;
-    padding: 2px 0 0;
+    min-height: 56px;
+    padding: 3px 0 0;
     border: 0;
     border-top: 1px solid rgba(215, 227, 180, 0.1);
   }
 
   .visualizador {
-    height: 45px;
+    height: 52px;
   }
 
   .pantalla__lecturas {
     grid-column: 2;
     grid-row: 1;
-    gap: 2px 8px;
+    gap: 3px 8px;
   }
 
   .pantalla__dato strong {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .pantalla__estado {
-    padding-top: 3px;
+    padding-top: 4px;
   }
 
   .demo {
-    min-height: 24px;
-    font-size: 6px;
+    min-height: 30px;
+    font-size: 13px;
   }
 
   .banco {
@@ -2115,17 +2133,17 @@ svg {
   }
 
   .marca__texto strong {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .marca__texto small {
-    font-size: 6px;
+    font-size: 12px;
   }
 
   .marca__simbolo {
     width: 35px;
     height: 35px;
-    font-size: 19px;
+    font-size: 24px;
   }
 
   .cabecera {
@@ -2135,10 +2153,10 @@ svg {
 
   .accion {
     flex: 1 1 0;
-    min-height: 35px;
+    min-height: 38px;
     gap: 4px;
-    padding: 7px 6px;
-    font-size: 8px;
+    padding: 8px 6px;
+    font-size: 13px;
   }
 
   .accion__tiempo {
@@ -2154,7 +2172,7 @@ svg {
   }
 
   .tapa {
-    padding: 9px 8px 10px;
+    padding: 11px 8px 12px;
     border-radius: 10px 10px 13px 13px;
   }
 
@@ -2184,11 +2202,11 @@ svg {
   }
 
   .tapa__franja {
-    font-size: 7px;
+    font-size: 13px;
   }
 
   .tapa__marca {
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .pantalla {
@@ -2200,11 +2218,11 @@ svg {
   }
 
   .pantalla__nombre {
-    font-size: 25px;
+    font-size: 34px;
   }
 
   .pantalla__descripcion {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .pantalla__visual-etiqueta {
@@ -2221,12 +2239,12 @@ svg {
 
   .banco__boton {
     gap: 4px;
-    padding: 4px 5px;
-    font-size: 7px;
+    padding: 5px 5px;
+    font-size: 13px;
   }
 
   .banco__numero {
-    font-size: 5px;
+    font-size: 12px;
   }
 
   .modulos {
@@ -2247,11 +2265,11 @@ svg {
   }
 
   .modulo {
-    padding: 11px 9px 9px;
+    padding: 13px 10px 12px;
   }
 
   .oscilador__fila {
-    padding: 3px 0 4px;
+    padding: 6px 0 7px;
   }
 
   .oscilador__canal {
@@ -2261,10 +2279,10 @@ svg {
   }
 
   .control-cabecera {
-    flex: 0 0 68px;
+    flex: 0 0 76px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2px;
+    gap: 3px;
   }
 
   .oscilador__mezcla {
@@ -2276,11 +2294,11 @@ svg {
   }
 
   .envolvente {
-    gap: 4px;
+    gap: 8px;
   }
 
   .envolvente__perillas {
-    gap: 6px 8px;
+    gap: 8px 8px;
   }
 
   .espacio__perillas {
@@ -2295,24 +2313,24 @@ svg {
 
   .salida__voces {
     width: auto;
-    min-width: 100px;
+    min-width: 104px;
     border-top: 0;
     border-left: 1px dashed rgba(23, 21, 16, 0.16);
     padding: 0 0 0 12px;
   }
 
   .salida__nota {
-    max-width: 72px;
+    max-width: none;
     text-align: left;
   }
 
   .teclado {
-    padding: 7px 6px 8px;
+    padding: 9px 7px 10px;
   }
 
   .teclado__barra {
     gap: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
   }
 
   .octava__etiqueta {
@@ -2320,7 +2338,7 @@ svg {
   }
 
   .octava__valor {
-    min-width: 61px;
+    min-width: 72px;
   }
 
   .teclado__division {
@@ -2328,24 +2346,29 @@ svg {
   }
 
   .teclado__blancas {
-    height: 96px;
+    height: 108px;
   }
 
   .tecla__atajo {
-    font-size: 6px;
+    font-size: 12px;
   }
 
   .tecla__nota {
-    font-size: 6px;
+    font-size: 12px;
   }
 
   .tapa__pie {
-    padding-top: 7px;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: 10px;
   }
 
   .ruta {
-    gap: 3px;
-    font-size: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    font-size: 12px;
+    row-gap: 5px;
   }
 
   .ruta i {
@@ -2354,18 +2377,71 @@ svg {
 
   .aviso {
     bottom: 12px;
-    font-size: 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cabecera__acciones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .accion,
+  .interruptor {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .interruptor {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .banco__lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px 0;
+    overflow-x: visible;
+  }
+
+  .banco__boton {
+    justify-content: center;
   }
 }
 
 @media (max-width: 370px) {
-  .accion {
-    flex: 0 0 35px;
-    padding: 7px 9px;
+  .tapa__marca i {
+    display: none;
   }
 
-  .accion span {
-    display: none;
+  .tapa__franja {
+    gap: 8px;
+  }
+
+  .salida {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 12px 16px;
+  }
+
+  .salida__voces {
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+    border-top: 0;
+    border-left: 1px dashed rgba(23, 21, 16, 0.16);
+    padding: 0 0 0 16px;
+  }
+
+  .salida__nota {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(23, 21, 16, 0.16);
+    text-align: left;
   }
 }
 
